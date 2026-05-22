@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://geoau4a61xu4"]
+
+[ext_resource type="Texture2D" uid="uid://dtsewq2uxy0un" path="res://kenney_space-shooter-remastered/Backgrounds/darkPurple.png" id="1_1oj5k"]
+[ext_resource type="PackedScene" uid="uid://beub78iddb48j" path="res://ship.tscn" id="2_yx7mw"]
+
+[node name="MainGame" type="Node2D" unique_id=139719571]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=611795746]
+position = Vector2(576.99994, 323.00006)
+scale = Vector2(4.4999995, 2.53125)
+texture = ExtResource("1_1oj5k")
+
+[node name="Ship" parent="." unique_id=1849777342 instance=ExtResource("2_yx7mw")]

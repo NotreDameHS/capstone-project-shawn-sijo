@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://beub78iddb48j"]
+
+[ext_resource type="Script" uid="uid://b8wwsgmhqfcp8" path="res://ship.gd" id="1_4cq66"]
+[ext_resource type="Texture2D" uid="uid://cf1ago4wmg4uj" path="res://kenney_space-shooter-remastered/PNG/playerShip2_blue.png" id="1_l3rv8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4cq66"]
+size = Vector2(113, 77)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l3rv8"]
+bg_color = Color(0, 0.78431374, 0.29803923, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Ship" type="Area2D" unique_id=1849777342]
+script = ExtResource("1_4cq66")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=128225859]
+texture = ExtResource("1_l3rv8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=142196395]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_4cq66")
+
+[node name="UI" type="Control" parent="." unique_id=1141133111]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="ProgressBar" parent="UI" unique_id=671765501]
+layout_mode = 0
+offset_left = -58.0
+offset_top = -55.0
+offset_right = 56.0
+offset_bottom = -45.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_l3rv8")
+value = 50.0
+show_percentage = false
