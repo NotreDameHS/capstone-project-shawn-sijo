@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b46vsyuh8vtcr"]
+
+[ext_resource type="PackedScene" uid="uid://bv6uv7h4lqddl" path="res://base_enemy.tscn" id="1_673d5"]
+[ext_resource type="Texture2D" uid="uid://ko2tp7ol4i14" path="res://kenney_space-shooter-remastered/PNG/Enemies/Enemy Boss.png" id="2_1rih2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xldg4"]
+radius = 809.5099
+
+[node name="BossEnemy" unique_id=72140782 instance=ExtResource("1_673d5")]
+scale = Vector2(4, 4)
+
+[node name="Sprite2D" parent="." index="0" unique_id=115013078]
+position = Vector2(3.5, -0.5)
+texture = ExtResource("2_1rih2")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1914761607]
+position = Vector2(4.75, 41.25)
+shape = SubResource("CircleShape2D_xldg4")
+
+[node name="HealthBar" parent="UI" parent_id_path=PackedInt32Array(1895503362) index="0" unique_id=1921643715]
+offset_left = -562.5
+offset_top = -868.99994
+offset_right = -327.05002
+offset_bottom = -849.8499
+scale = Vector2(5, 5)

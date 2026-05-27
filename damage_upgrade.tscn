@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bt8g3tp6kg2hc"]
+
+[ext_resource type="Texture2D" uid="uid://cj2hojdxkingo" path="res://kenney_space-shooter-remastered/PNG/Effects/star2.png" id="1_pojvp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_knuf6"]
+radius = 12.165525
+
+[node name="Damage Upgrade" type="Area2D" unique_id=500906865]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=874912032]
+texture = ExtResource("1_pojvp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=621681086]
+shape = SubResource("CircleShape2D_knuf6")

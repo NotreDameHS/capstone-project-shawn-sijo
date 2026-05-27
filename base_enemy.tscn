@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://bv6uv7h4lqddl"]
+
+[ext_resource type="Script" uid="uid://ddhrrgyh3tg7p" path="res://base_enemy.gd" id="1_vaaym"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8fkgw"]
+radius = 196.65198
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vaaym"]
+bg_color = Color(0.17254902, 0.79607844, 0.42352942, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="BaseEnemy" type="Area2D" unique_id=72140782]
+script = ExtResource("1_vaaym")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=115013078]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1914761607]
+shape = SubResource("CircleShape2D_8fkgw")
+
+[node name="UI" type="Control" parent="." unique_id=1895503362]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -19.0
+offset_top = -96.0
+offset_right = 21.0
+offset_bottom = -56.0
+
+[node name="HealthBar" type="ProgressBar" parent="UI" unique_id=1921643715]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 24.0
+offset_right = 72.0
+offset_bottom = 32.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_vaaym")
+value = 50.0
+show_percentage = false

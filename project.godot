@@ -15,10 +15,6 @@ run/main_scene="uid://geoau4a61xu4"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
-
-window/size/mode=3
-
 [input]
 
 move_left={
