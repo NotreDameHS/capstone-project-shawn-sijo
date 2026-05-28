@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://dtsewq2uxy0un" path="res://kenney_space-shooter-remastered/Backgrounds/darkPurple.png" id="1_1oj5k"]
 [ext_resource type="PackedScene" uid="uid://beub78iddb48j" path="res://ship.tscn" id="2_yx7mw"]
+[ext_resource type="PackedScene" uid="uid://b46vsyuh8vtcr" path="res://boss_enemy.tscn" id="3_ykeeq"]
+[ext_resource type="PackedScene" uid="uid://cl2pq61gcesgq" path="res://regular_enemies.tscn" id="4_dugkq"]
+[ext_resource type="PackedScene" uid="uid://cw2mysaogu15y" path="res://anomly_enemy.tscn" id="5_2pltu"]
 
 [node name="MainGame" type="Node2D" unique_id=139719571]
 
@@ -11,3 +14,12 @@ scale = Vector2(50, 50)
 texture = ExtResource("1_1oj5k")
 
 [node name="Ship" parent="." unique_id=1849777342 instance=ExtResource("2_yx7mw")]
+
+[node name="BossEnemy" parent="." unique_id=72140782 instance=ExtResource("3_ykeeq")]
+position = Vector2(1338, 788)
+
+[node name="RegularEnemies" parent="." unique_id=2024138544 instance=ExtResource("4_dugkq")]
+position = Vector2(2484, 870)
+
+[node name="AnomlyEnemy" parent="." unique_id=2022399119 instance=ExtResource("5_2pltu")]
+position = Vector2(2121, 848)

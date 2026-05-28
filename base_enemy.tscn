@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ddhrrgyh3tg7p" path="res://base_enemy.gd" id="1_vaaym"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8fkgw"]
-radius = 196.65198
+radius = 189.04233
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vaaym"]
 bg_color = Color(0.17254902, 0.79607844, 0.42352942, 1)
@@ -12,12 +12,12 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
-[node name="BaseEnemy" type="Area2D" unique_id=72140782]
+[node name="BaseEnemy" type="Area2D" unique_id=72140782 groups=["Player"]]
 script = ExtResource("1_vaaym")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=115013078]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1914761607]
+[node name="Hitbox" type="CollisionShape2D" parent="." unique_id=1914761607]
 shape = SubResource("CircleShape2D_8fkgw")
 
 [node name="UI" type="Control" parent="." unique_id=1895503362]

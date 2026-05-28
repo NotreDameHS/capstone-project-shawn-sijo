@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://df8y2hdjim705"]
+
+[ext_resource type="Script" uid="uid://b0llrquh4365o" path="res://mob_spawner.gd" id="1_fir6i"]
+
+[node name="MobSpawner" type="Node2D" unique_id=95089369]
+script = ExtResource("1_fir6i")
+
+[node name="Timer" type="Timer" parent="." unique_id=1317785420]

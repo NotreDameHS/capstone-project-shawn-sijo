@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c05rkp7tsxhgo"]
+
+[ext_resource type="Script" uid="uid://sxb7lkutbj07" path="res://weapon.gd" id="1_swcir"]
+
+[node name="Weapon" type="Node2D" unique_id=2030593639]
+script = ExtResource("1_swcir")
+
+[node name="WeaponSprite" type="Sprite2D" parent="." unique_id=870527639]
+
+[node name="Timer" type="Timer" parent="." unique_id=373144468]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

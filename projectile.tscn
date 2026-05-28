@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://cl5pv1xbvjmxu"]
 
+[ext_resource type="Script" uid="uid://nawmph26tu6g" path="res://projectile.gd" id="1_a85iw"]
+
 [node name="Projectile" type="Area2D" unique_id=1300058605]
+script = ExtResource("1_a85iw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1946272486]
 

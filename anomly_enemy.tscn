@@ -4,12 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://cid1myhv31rtr" path="res://kenney_space-shooter-remastered/PNG/Enemies/Anomoly Enemy.png" id="2_abnj4"]
 
 [node name="AnomlyEnemy" unique_id=72140782 instance=ExtResource("1_smaoj")]
+speed = 325
+health = 200
 
 [node name="Sprite2D" parent="." index="0" unique_id=115013078]
+rotation = 1.5707964
 texture = ExtResource("2_abnj4")
 
-[node name="CollisionShape2D" parent="." index="1" unique_id=1914761607]
-position = Vector2(2, 37)
+[node name="Hitbox" parent="." index="1" unique_id=1914761607]
+position = Vector2(-35, 5)
 
 [node name="UI" parent="." index="2" unique_id=1895503362]
 offset_top = -165.0
@@ -17,8 +20,8 @@ offset_right = 53.0
 offset_bottom = -139.0
 
 [node name="HealthBar" parent="UI" index="0" unique_id=1921643715]
-offset_left = -83.0
-offset_top = -39.0
-offset_right = 21.0
-offset_bottom = -31.0
+offset_left = -122.0
+offset_top = -62.0
+offset_right = -18.0
+offset_bottom = -53.0
 scale = Vector2(2, 2)

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://lf80y63yo44r"]
+
+[ext_resource type="Script" uid="uid://qafkdv6w256a" path="res://map_controller.gd" id="1_qhulj"]
+
+[node name="MapController" type="Node2D" unique_id=1617658709]
+script = ExtResource("1_qhulj")

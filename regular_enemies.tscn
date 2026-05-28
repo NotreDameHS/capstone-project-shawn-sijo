@@ -4,12 +4,15 @@
 [ext_resource type="Texture2D" uid="uid://dxt5sslieytt8" path="res://kenney_space-shooter-remastered/PNG/Enemies/enemyGreen2.png" id="2_noiyx"]
 
 [node name="RegularEnemies" unique_id=72140782 instance=ExtResource("1_76ges")]
+scale = Vector2(0.75, 0.75)
+speed = 225
 
 [node name="Sprite2D" parent="." index="0" unique_id=115013078]
+rotation = -1.5707964
 scale = Vector2(2, 2)
 texture = ExtResource("2_noiyx")
 
-[node name="CollisionShape2D" parent="." index="1" unique_id=1914761607]
+[node name="Hitbox" parent="." index="1" unique_id=1914761607]
 scale = Vector2(0.6, 0.6)
 
 [node name="HealthBar" parent="UI" parent_id_path=PackedInt32Array(1895503362) index="0" unique_id=1921643715]

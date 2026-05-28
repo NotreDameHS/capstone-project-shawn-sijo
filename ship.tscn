@@ -13,7 +13,7 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
-[node name="Ship" type="Area2D" unique_id=1849777342]
+[node name="Ship" type="Area2D" unique_id=1849777342 groups=["Player"]]
 rotation = 1.5707964
 script = ExtResource("1_4cq66")
 
