@@ -5,8 +5,6 @@ class_name Mob
 @export var speed := 200
 @export var health := 100
 
-
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Hitbox.shape = Hitbox.shape.duplicate()
@@ -17,8 +15,11 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta: float) -> void:
 	var player := get_tree().get_nodes_in_group("Player")[0]
+
 	position = position.move_toward(player.global_position, speed * delta)
 	look_at(player.global_position)
+	
+	
 	pass
 
 

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b42vt3vth8gi0"]
+
+[ext_resource type="PackedScene" uid="uid://c05rkp7tsxhgo" path="res://weapon.tscn" id="1_004dc"]
+[ext_resource type="Texture2D" uid="uid://c6jwpux01esdi" path="res://kenney_space-shooter-remastered/PNG/Parts/gun08.png" id="2_fj51k"]
+
+[node name="EnemyWeapon" unique_id=2030593639 instance=ExtResource("1_004dc")]
+
+[node name="WeaponSprite" parent="." index="0" unique_id=870527639]
+texture = ExtResource("2_fj51k")

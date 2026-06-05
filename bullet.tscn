@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dkpeci8ca2r2s"]
+
+[ext_resource type="PackedScene" uid="uid://cl5pv1xbvjmxu" path="res://projectile.tscn" id="1_v7oki"]
+[ext_resource type="Texture2D" uid="uid://bo5h00ks0yilw" path="res://kenney_space-shooter-remastered/PNG/Parts/beam6.png" id="2_v8qja"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t4vbm"]
+size = Vector2(44, 23)
+
+[node name="Bullet" unique_id=1300058605 instance=ExtResource("1_v7oki")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=1946272486]
+texture = ExtResource("2_v8qja")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1170925436]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_t4vbm")
