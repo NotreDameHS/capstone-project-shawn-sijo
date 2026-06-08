@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://mvr5hfund1ky"]
+
+[ext_resource type="PackedScene" uid="uid://cmcndbcuydohc" path="res://base_item.tscn" id="1_yvxp7"]
+
+[node name="HealingUpgrade" unique_id=1333299862 groups=["healing"] instance=ExtResource("1_yvxp7")]

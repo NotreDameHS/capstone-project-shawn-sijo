@@ -16,5 +16,5 @@ func _process(delta: float) -> void:
 	pass
 "
 
-[node name="DamageUpgrade" unique_id=1333299862 instance=ExtResource("1_pojvp")]
+[node name="DamageUpgrade" unique_id=1333299862 groups=["damage"] instance=ExtResource("1_pojvp")]
 script = SubResource("GDScript_pojvp")

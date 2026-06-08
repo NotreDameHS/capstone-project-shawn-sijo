@@ -5,7 +5,7 @@ var max_speed := normal_speed
 var velocity = Vector2(0,0)
 var steering_factor := 10.0
 var health := 100
-
+var damage := 20
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -34,6 +34,11 @@ func _process(delta: float) -> void:
 	position.y = wrapf(position.y, 0, viewport_size.y)
 	pass
 
-#func _on_area_entered(area: Area2D) -> void:
-	#if area.is_in_group("damage"):
+func _on_area_entered(area: Area2D) -> void:
+	if area.is_in_group("damage"):
+		damage += 5
+	
+	elif area.is_in_group("healing"):
+		health += 20
 		
+	

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://b8wwsgmhqfcp8" path="res://ship.gd" id="1_4cq66"]
 [ext_resource type="Texture2D" uid="uid://cf1ago4wmg4uj" path="res://kenney_space-shooter-remastered/PNG/playerShip2_blue.png" id="1_l3rv8"]
+[ext_resource type="PackedScene" uid="uid://bcp6wdkmcdarn" path="res://player_weapon.tscn" id="3_v4325"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4cq66"]
 size = Vector2(113, 77)
@@ -40,3 +41,5 @@ offset_bottom = -64.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_l3rv8")
 value = 50.0
 show_percentage = false
+
+[node name="PlayerWeapon" parent="." unique_id=2030593639 instance=ExtResource("3_v4325")]
